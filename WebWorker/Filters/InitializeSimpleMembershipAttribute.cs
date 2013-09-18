@@ -4,9 +4,9 @@ using System.Data.Entity.Infrastructure;
 using System.Threading;
 using System.Web.Mvc;
 using WebMatrix.WebData;
-using WebWorker.Models;
+using BellordPlants.Cloud.MVC.Models;
 
-namespace WebWorker.Filters
+namespace BellordPlants.Cloud.MVC.Filters
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
     public sealed class InitializeSimpleMembershipAttribute : ActionFilterAttribute
@@ -25,11 +25,11 @@ namespace WebWorker.Filters
         {
             public SimpleMembershipInitializer()
             {
-                Database.SetInitializer<UsersContext>(null);
+                Database.SetInitializer<BellordPlantsContext>(null);
 
                 try
                 {
-                    using (var context = new UsersContext())
+                    using (var context = new BellordPlantsContext())
                     {
                         if (!context.Database.Exists())
                         {

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.Web.WebPages.OAuth;
-using WebWorker.Models;
+using BellordPlants.Cloud.MVC.Models;
 
-namespace WebWorker
+namespace BellordPlants.Cloud.MVC
 {
     public static class AuthConfig
     {

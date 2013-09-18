@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WebWorker;
-using WebWorker.Controllers;
+using BellordPlants.Cloud.MVC;
+using BellordPlants.Cloud.MVC.Controllers;
 
 namespace BellordPlants.Cloud.Tests.Controllers
 {

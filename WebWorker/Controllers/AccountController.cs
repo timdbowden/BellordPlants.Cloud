@@ -8,10 +8,10 @@ using System.Web.Security;
 using DotNetOpenAuth.AspNet;
 using Microsoft.Web.WebPages.OAuth;
 using WebMatrix.WebData;
-using WebWorker.Filters;
-using WebWorker.Models;
+using BellordPlants.Cloud.MVC.Filters;
+using BellordPlants.Cloud.MVC.Models;
 
-namespace WebWorker.Controllers
+namespace BellordPlants.Cloud.MVC.Controllers
 {
     [Authorize]
     [InitializeSimpleMembership]
@@ -263,7 +263,7 @@ namespace WebWorker.Controllers
             if (ModelState.IsValid)
             {
                 // Insert a new user into the database
-                using (UsersContext db = new UsersContext())
+                using (BellordPlantsContext db = new BellordPlantsContext())
                 {
                     UserProfile user = db.UserProfiles.FirstOrDefault(u => u.UserName.ToLower() == model.UserName.ToLower());
                     // Check if user already exists
