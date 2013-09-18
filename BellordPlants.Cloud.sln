@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "BellordPlants.Cloud", "BellordPlants.Cloud\BellordPlants.Cloud.ccproj", "{95E42A12-F4A5-4FA1-A34B-15A6D7A8150D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BellordPlants.Cloud.MVC", "WebWorker\BellordPlants.Cloud.MVC.csproj", "{006D7AA2-E5E7-428E-BF80-26B96B58C19E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BellordPlants.Cloud.Tests", "BellordPlants.Cloud.Tests\BellordPlants.Cloud.Tests.csproj", "{407A3E0B-9E21-4CED-8D4A-A92604206FCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95E42A12-F4A5-4FA1-A34B-15A6D7A8150D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95E42A12-F4A5-4FA1-A34B-15A6D7A8150D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95E42A12-F4A5-4FA1-A34B-15A6D7A8150D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95E42A12-F4A5-4FA1-A34B-15A6D7A8150D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{006D7AA2-E5E7-428E-BF80-26B96B58C19E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{006D7AA2-E5E7-428E-BF80-26B96B58C19E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{006D7AA2-E5E7-428E-BF80-26B96B58C19E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{006D7AA2-E5E7-428E-BF80-26B96B58C19E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{407A3E0B-9E21-4CED-8D4A-A92604206FCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{407A3E0B-9E21-4CED-8D4A-A92604206FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{407A3E0B-9E21-4CED-8D4A-A92604206FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{407A3E0B-9E21-4CED-8D4A-A92604206FCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
