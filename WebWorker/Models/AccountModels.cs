@@ -8,7 +8,15 @@ using System.Web.Security;
 
 namespace BellordPlants.Cloud.MVC.Models
 {
-   
+    //public class UsersContext : DbContext
+    //{
+    //    public UsersContext()
+    //        : base("DefaultConnection")
+    //    {
+    //    }
+
+    //    public DbSet<UserProfile> UserProfiles { get; set; }
+    //}
 
     [Table("UserProfile")]
     public class UserProfile
@@ -17,6 +25,10 @@ namespace BellordPlants.Cloud.MVC.Models
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int UserId { get; set; }
         public string UserName { get; set; }
+        [Display(Name = "User name")]
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
+
     }
 
     public class RegisterExternalLoginModel
@@ -67,6 +79,11 @@ namespace BellordPlants.Cloud.MVC.Models
         [Required]
         [Display(Name = "User name")]
         public string UserName { get; set; }
+
+        [Required]
+        [Display(Name = "Email")]
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
